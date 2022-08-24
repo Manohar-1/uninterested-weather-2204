@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100%;
+      }
+      form {
+        margin: auto;
+        width: 35%;
+        border: 0px solid red;
+        padding: 20px 40px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      input[type="text"] {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 20px;
+        font-weight: bold;
+        color: white;
+        background-color: #f37e5d;
+        border: white;
+      }
+      p {
+        text-align: center;
+      }
+      button {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <img
+        src="https://imgs.search.brave.com/1tmQ4L3SpvxUY6AC1laQ_n2PSF1QVOvvmYvrmsRCCNE/rs:fit:909:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5x/a0VFcU9JOUZqVG9x/dS1oZG9LcUdnSGFE/MyZwaWQ9QXBp"
+        alt=""
+      />
+      <label for="">Email Address</label><br />
+      <input type="text" placeholder="Email Address" />
+      <br />
+      <br />
+      <label for="">Password</label><br />
+      <input type="text" placeholder="Password" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      <br />
+      <p>OR</p>
+      <button>Continue with Google</button><br /><br />
+      <button>Continue with FaceBook</button><br /><br />
+      <button>Continue with Apple</button><br /><br />
+
+      <p>
+        <a href="signup.html">Need an account?</a> |
+        <a href=""> Forgot Your Password?</a>
+      </p>
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Signed In Successfully");
+  });
+</script>
