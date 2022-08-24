@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #navbar > img {
+        width: 15%;
+      }
+      #navbar {
+        border: 0px solid red;
+        display: flex;
+      }
+      #navbar > div {
+        width: 100%;
+        border: 0px solid green;
+        display: flex;
+        justify-content: space-between;
+      }
+      #navbar > div > div:nth-child(1) {
+        width: 500px;
+        border: 0px solid red;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-around;
+        padding: 30px 0px;
+        margin-top: 8px;
+      }
+
+      #signcontent {
+        width: 341px;
+        border: 0px solid red;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, auto);
+        padding: 31px 1px;
+      }
+      #signcontent > div {
+        border: 0px solid black;
+        width: auto;
+        height: auto;
+        margin: 0px 11px;
+        padding: 5px 0px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 8px;
+      }
+      #navbar > div > div:nth-child(1) > div {
+        border: 0px solid black;
+        margin: 0px 11px;
+        height: auto;
+        padding: 5px 0px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+
+      #navbar + h1 {
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 50px;
+        line-height: 80px;
+      }
+      #navbar + h1 + p {
+        text-align: center;
+        font-size: 21px;
+      }
+      #button {
+        text-align: center;
+      }
+      #navbar ~ img {
+        width: 100%;
+      }
+      #container {
+        border: 0px solid black;
+        height: auto;
+        width: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 150px);
+        grid-template-rows: repeat(2, 50px);
+        gap: 40px;
+        flex: wrap;
+        justify-content: space-evenly;
+      }
+      #container > div {
+        border: 0px solid red;
+      }
+      img + h1 {
+        text-align: center;
+        color: rgb(91, 90, 90);
+      }
+      #button > button {
+        background-color: #f37e5d;
+        font-weight: bold;
+        padding: 20px 40px;
+        color: white;
+        border: white;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://imgs.search.brave.com/1tmQ4L3SpvxUY6AC1laQ_n2PSF1QVOvvmYvrmsRCCNE/rs:fit:909:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5x/a0VFcU9JOUZqVG9x/dS1oZG9LcUdnSGFE/MyZwaWQ9QXBp"
+        alt=""
+      />
+      <div>
+        <div>
+          <div>Products</div>
+          <div>Why CoSchedule</div>
+          <div>Resources</div>
+          <div>Pricing</div>
+        </div>
+        <div id="signcontent">
+          <div>Sign In</div>
+          <div id="#signup">Get Started Free</div>
+          <div>Try A Demo</div>
+        </div>
+      </div>
+    </div>
+
+    <h1>
+      Organize All Of Your Marketing In <br />
+      One Place. From Any Place.
+    </h1>
+
+    <p>
+      Get more done in less time with the only work management software for
+      marketers.
+    </p>
+    <div id="button">
+      <button>Request a Demo Now</button>
+    </div>
+    <br />
+    <br />
+    <img
+      src="https://coschedule.com/_next/image?url=%2Fimg%2Fhome%2Fhome-calendar.png&w=3840&q=75"
+      alt=""
+    />
+    <h1>30,000 marketers start their day with CoSchedule</h1>
+    <div id="container"></div>
+  </body>
+</html>
+
+<script>
+  document
+    .querySelector("#signcontent>div")
+    .addEventListener("click", function () {
+      document.location.href = "signin.html";
+    });
+
+  document.querySelector("#signcontent>div").style.cursor = "pointer";
+  document
+    .querySelector("#signcontent>div+div")
+    .addEventListener("click", function () {
+      document.location.href = "signup.html";
+    });
+
+  document.querySelector("#signcontent>div+div").style.cursor = "pointer";
+
+  let companyData = [
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-logo.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fyamaha-logo.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Funicef-logo.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fvericast-logo2.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fwalgreens-logo.webp&w=384&q=75",
+    },
+    {
+      img_url: "",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fp-and-g-logo.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fschwans-logo.webp&w=384&q=75",
+    },
+    {
+      img_url:
+        "https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fdictionary-com-logo.webp&w=384&q=75",
+    },
+    {
+      img_url: "",
+    },
+  ];
+
+  companyData.forEach(function (el) {
+    let box = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.setAttribute("src", el.img_url);
+    image.style.width = "100%";
+
+    box.append(image);
+    document.querySelector("#container").append(box);
+  });
+</script>

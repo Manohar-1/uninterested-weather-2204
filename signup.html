@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+      line-height: 25px;
+    }
+    h1 + p {
+      font-size: 14px;
+    }
+    a {
+      text-decoration-color: grey;
+      color: grey;
+    }
+    p {
+      text-align: center;
+      font-family: sans-serif;
+      color: grey;
+    }
+    form {
+      width: 35%;
+      margin: auto;
+      padding: 30px 40px;
+      border: 0px solid red;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding-top: 50px;
+    }
+    input[type="text"] {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 20px;
+      background-color: #f37e5d;
+      border: white;
+      font-weight: bold;
+      color: white;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+    #last {
+      text-align: left;
+      font-size: 14px;
+      justify-content: right;
+    }
+  </style>
+  <body>
+    <h1>Create My Marketing Calendar</h1>
+    <p>Free for life. No credit card required.</p>
+    <form action="">
+      <label for="">Full Name</label> <br />
+      <input type="text" placeholder="Full Name" />
+      <br /><br />
+      <label for="">Email Address</label><br />
+      <input type="text" placeholder="Work Email Address" />
+      <br /><br />
+      <label for="">Password</label><br />
+      <input
+        type="text"
+        placeholder="Password(minimum 8 characters"
+      /><br /><br />
+
+      <input type="submit" value="Get Started Now" />
+      <br />
+      <br />
+      <p>OR</p>
+
+      <button>Continue with Google</button><br /><br />
+      <button>Continue with FaceBook</button><br /><br />
+      <button>Continue with Apple</button><br /><br />
+
+      <p id="last">
+        By clicking "Get Started Now", you agree to CoSchedule’s
+        <a href="">terms of service, end user agreement, and privacy policy</a>
+        ; you are 16 years or older; and you will receive information from
+        CoSchedule from which you can opt out at any time.
+      </p>
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("SignedUp Successfully");
+  });
+</script>
