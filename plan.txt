@@ -1,1 +1,15 @@
-I should plan this time carefully
+day3 
+Issues 
+1)Middle Section 
+2)FeedBack Section
+3)Request Demo Section 
+
+day4 
+Issues 
+1)FooterSection 
+2)NavigationBar2 Section
+3)Grid Section 
+
+day5 
+Issues 
+1)ExtremeBottom(copyright section)
