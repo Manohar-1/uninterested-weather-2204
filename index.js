@@ -56,8 +56,9 @@ let companyData = [
 
 companyData.forEach(function (el) {
   let box = document.createElement("div");
-  box.style.fontFamily = "sans-serif";
 
+  box.style.fontFamily = "sans-serif";
+  
   let image = document.createElement("img");
   image.setAttribute("src", el.img_url);
   image.style.width = "100%";
@@ -65,6 +66,7 @@ companyData.forEach(function (el) {
   box.append(image);
   document.querySelector("#container").append(box);
 });
+
 
 let productData = [
   {
@@ -183,3 +185,4 @@ productData.forEach(function (el) {
 
   document.querySelector("#container2>div").append(box);
 });
+
