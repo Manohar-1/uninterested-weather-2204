@@ -1,0 +1,93 @@
+#navbar > img {
+  width: 15%;
+}
+#navbar {
+  border: 0px solid red;
+  display: flex;
+}
+#navbar > div {
+  width: 100%;
+  border: 0px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+#navbar > div > div:nth-child(1) {
+  width: 500px;
+  border: 0px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-around;
+  padding: 30px 0px;
+  margin-top: 8px;
+}
+
+#signcontent {
+  width: 341px;
+  border: 0px solid red;
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, auto);
+  padding: 31px 1px;
+}
+#signcontent > div {
+  border: 0px solid black;
+  width: auto;
+  height: auto;
+  margin: 0px 11px;
+  padding: 5px 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 8px;
+}
+#navbar > div > div:nth-child(1) > div {
+  border: 0px solid black;
+  margin: 0px 11px;
+  height: auto;
+  padding: 5px 0px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#navbar + h1 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 50px;
+  line-height: 80px;
+}
+#navbar + h1 + p {
+  text-align: center;
+  font-size: 21px;
+}
+#button {
+  text-align: center;
+}
+#navbar ~ img {
+  width: 100%;
+}
+#container {
+  border: 0px solid black;
+  height: auto;
+  width: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(2, 50px);
+  gap: 40px;
+  flex: wrap;
+  justify-content: space-evenly;
+}
+#container > div {
+  border: 0px solid red;
+}
+img + h1 {
+  text-align: center;
+  color: rgb(91, 90, 90);
+}
+#button > button {
+  background-color: #f37e5d;
+  font-weight: bold;
+  padding: 20px 40px;
+  color: white;
+  border: white;
+  margin-top: 40px;
+}
