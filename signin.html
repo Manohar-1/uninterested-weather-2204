@@ -5,43 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      img {
-        width: 100%;
-      }
-      form {
-        margin: auto;
-        width: 35%;
-        border: 0px solid red;
-        padding: 20px 40px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      }
-      input[type="text"] {
-        box-sizing: border-box;
-        padding: 20px;
-        width: 100%;
-      }
-      input[type="submit"] {
-        width: 100%;
-        padding: 20px;
-        font-weight: bold;
-        color: white;
-        background-color: #f37e5d;
-        border: white;
-      }
-      p {
-        text-align: center;
-      }
-      button {
-        text-align: center;
-        width: 100%;
-        padding: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: grey;
-      }
-    </style>
+    <link rel="stylesheet" href="signin.css" />
   </head>
   <body>
     <form action="">
@@ -50,14 +14,14 @@
         alt=""
       />
       <label for="">Email Address</label><br />
-      <input type="text" placeholder="Email Address" />
+      <input type="text" id="email" placeholder="Email Address" />
       <br />
       <br />
       <label for="">Password</label><br />
-      <input type="text" placeholder="Password" />
+      <input type="text" id="password" placeholder="Password" />
       <br />
       <br />
-      <input type="submit" value="Submit" />
+      <input type="submit" id="submit" value="Submit" />
       <br />
       <br />
       <p>OR</p>
@@ -73,9 +37,4 @@
   </body>
 </html>
 
-<script>
-  document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Signed In Successfully");
-  });
-</script>
+<script src="signin.js"></script>

@@ -6,77 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <style>
-    * {
-      font-family: sans-serif;
-    }
-
-    h1 {
-      font-family: sans-serif;
-      text-align: center;
-      line-height: 25px;
-    }
-    h1 + p {
-      font-size: 14px;
-    }
-    a {
-      text-decoration-color: grey;
-      color: grey;
-    }
-    p {
-      text-align: center;
-      font-family: sans-serif;
-      color: grey;
-    }
-    form {
-      width: 35%;
-      margin: auto;
-      padding: 30px 40px;
-      border: 0px solid red;
-      border-radius: 10px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      padding-top: 50px;
-    }
-    input[type="text"] {
-      box-sizing: border-box;
-      width: 100%;
-      padding: 20px;
-    }
-    input[type="submit"] {
-      width: 100%;
-      padding: 20px;
-      background-color: #f37e5d;
-      border: white;
-      font-weight: bold;
-      color: white;
-    }
-    button {
-      width: 100%;
-      padding: 10px;
-    }
-    #last {
-      text-align: left;
-      font-size: 14px;
-      justify-content: right;
-    }
-  </style>
+  <link rel="stylesheet" href="signup.css" />
   <body>
     <h1>Create My Marketing Calendar</h1>
     <p>Free for life. No credit card required.</p>
     <form action="">
       <label for="">Full Name</label> <br />
-      <input type="text" placeholder="Full Name" />
+      <input type="text" id="fullname" placeholder="Full Name" />
       <br /><br />
       <label for="">Email Address</label><br />
-      <input type="text" placeholder="Work Email Address" />
+      <input type="text" id="email" placeholder="Work Email Address" />
       <br /><br />
       <label for="">Password</label><br />
       <input
         type="text"
+        id="password"
         placeholder="Password(minimum 8 characters"
       /><br /><br />
 
-      <input type="submit" value="Get Started Now" />
+      <input type="submit" id="submit" value="Get Started Now" />
       <br />
       <br />
       <p>OR</p>
@@ -95,9 +43,4 @@
   </body>
 </html>
 
-<script>
-  document.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("SignedUp Successfully");
-  });
-</script>
+<script src="signup.js"></script>

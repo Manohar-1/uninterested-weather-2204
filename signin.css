@@ -1,0 +1,35 @@
+img {
+  width: 100%;
+}
+form {
+  margin: auto;
+  width: 35%;
+  border: 0px solid red;
+  padding: 20px 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+input[type="text"] {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #f37e5d;
+  border: white;
+}
+p {
+  text-align: center;
+}
+button {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
